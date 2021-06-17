@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  padding: 10px;
+}
+
+.gallery {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border: 2px solid white;
+  margin: 50px auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider {
+  height: 500px;
+  background-size: cover;
+}
+
+.image-list {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.image-list li {
+  flex-shrink: 0;
+  width: 150px;
+  height: 100px;
+  cursor: pointer;
+  background-size: cover;
+  list-style-type: none;
+  opacity: 0.3;
+  border: 2px solid white;
+}
+
+.list {
+  border: 2px solid white;
+  overflow: hidden;
+  position: relative;
+  height: 100px;
+}
+
+.active {
+  opacity: 1 !important;
+}
+
+.left-big-arrow {
+  left: 10px;
+  transform: rotate(180deg);
+  top: 40%;
+}
+
+.right-big-arrow {
+  right: 10px;
+  top: 40%;
+}
+
+.left-big-arrow,
+.right-big-arrow,
+.right-small-arrow,
+.left-small-arrow {
+  color: white;
+  font-size: 50px;
+  opacity: 0.7;
+  text-shadow: 0 0 10px black;
+  cursor: pointer;
+  position: absolute;
+}
+
+.left-big-arrow:hover,
+.right-big-arrow:hover,
+.right-small-arrow:hover {
+  opacity: 1;
+}
+
+.right-small-arrow {
+  top: 25px;
+  right: 10px;
+  font-size: 30px;
+}
+
+.left-small-arrow {
+  top: 25px;
+  left: 10px;
+  transform: rotate(180deg);
+  font-size: 30px;
+}
